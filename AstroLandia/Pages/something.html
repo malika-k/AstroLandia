@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script language="javascript"> 
+function toggle() {
+	var ele = document.getElementById("click1");
+	var text = document.getElementById("click");
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+		text.innerHTML = "show";
+  	}
+	else {
+		ele.style.display = "block";
+		text.innerHTML = "hide";
+	}
+} 
+</script>
+ 
+<a id="click" href="javascript:toggle();">show</a> <== click Here
+<div id="click1" style="display: none"><h1>peek-a-boo</h1></div>
+
+</body>
+</html>
